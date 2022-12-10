@@ -1,0 +1,38 @@
+{
+  "name": "alireaza/laravel-form-data",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "description": "This is Form Data request handler for Laravel.",
+  "keywords": [
+    "alireaza",
+    "Form-Data",
+    "Form",
+    "Data",
+    "Request"
+  ],
+  "homepage": "https://gitlab.com/alireaza/laravel-form-data",
+  "authors": [
+    {
+      "name": "Mohammad Ali Ghorbani Delijani",
+      "homepage": "https://www.alireaza.com",
+      "email": "alireazamagh@gmail.com"
+    }
+  ],
+  "funding": [
+    {
+      "type": "LinkedIn",
+      "url": "https://www.linkedin.com/in/alireaza"
+    }
+  ],
+  "require": {
+    "php": "^8.0.0",
+    "laravel/framework": "^9.0",
+    "alireaza/php-form-data": "1.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AliReaza\\Laravel\\Request\\": "src/"
+    }
+  }
+}
