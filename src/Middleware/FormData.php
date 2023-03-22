@@ -5,6 +5,7 @@ namespace AliReaza\Laravel\Request\Middleware;
 use Closure;
 use Symfony\Component\HttpFoundation\Request;
 use AliReaza\Component\HttpFoundation\Request\FormData as FormDataHandler;
+use Illuminate\Http\UploadedFile;
 
 class FormData
 {
@@ -28,7 +29,10 @@ class FormData
 
                     $request->request->add($static->inputs);
 
-                    $request->files->add($static->files);
+                    foreach ($static->files as $key => $file) {
+                        $file = new UploadedFile($file['tmp_name'], $file['name'], $file['type'], $file['error'], true);
+                        $request->files->set($key, $file);
+                    }
                 }
             }
         }
