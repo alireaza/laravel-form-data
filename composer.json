@@ -1,6 +1,6 @@
 {
   "name": "alireaza/laravel-form-data",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "type": "library",
   "license": "MIT",
   "description": "This is Form Data request handler for Laravel.",
@@ -28,7 +28,7 @@
   "require": {
     "php": "^8.0.0",
     "laravel/framework": "^9.0 || ^10.0 || ^11.0",
-    "alireaza/php-form-data": "1.0.0"
+    "alireaza/php-form-data": "1.1.0"
   },
   "autoload": {
     "psr-4": {
