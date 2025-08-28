@@ -27,7 +27,7 @@
   ],
   "require": {
     "php": "^8.0.0",
-    "laravel/framework": "^9.0 || ^10.0 || ^11.0",
+    "laravel/framework": "^9.0 || ^10.0 || ^11.0 || ^12.0"",
     "alireaza/php-form-data": "1.0.0"
   },
   "autoload": {
